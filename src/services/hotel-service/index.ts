@@ -1,5 +1,6 @@
 import { notFoundError } from '@/errors';
 import hotelRepository from '@/repositories/hotel-repository';
+import { authenticateToken } from '@/middlewares/authentication-middleware';
 
 // Get All Hotels
 async function getAllHotels() {
